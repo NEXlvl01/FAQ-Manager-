@@ -11,12 +11,11 @@ connectDB();
 const app = express();
 
 
-app.use(express.json());
+app.use(express.json()); //Use Of Middlewares
 app.use(express.urlencoded({ extended: false }));
-
 app.use(cors());
 
-app.use("/api/faq",faqRouter);
+app.use("/api/faq",faqRouter); 
 
 
 app.get('/', (req, res) => {

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const FaqSchema = new mongoose.Schema({
+const FaqSchema = new mongoose.Schema({ //Schema For FAQ
   question: {
     type: String,
     required: true,

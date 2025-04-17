@@ -1,6 +1,6 @@
 const Faq = require('../models/faq.model.js');
 
-getFaqs = async (req, res) => {
+getFaqs = async (req, res) => {  //Logic For Getting The FAQs
   try {
     const faqs = await Faq.find({});
     
@@ -18,7 +18,7 @@ getFaqs = async (req, res) => {
 };
 
 
-addFaq = async (req, res) => {
+addFaq = async (req, res) => { //Logic For Adding a FAQs
   try {
     const { question, answer } = req.body;
     
